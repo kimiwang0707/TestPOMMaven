@@ -21,7 +21,7 @@ public class TestSuite {
 
     }
 
-    @Test
+    @Test(priority = 2)
     public void AddNDeleteUser(){
         AddAndDeletePage addNewUser = new AddAndDeletePage(Global.driver);
         addNewUser.addNDeleteUser();
@@ -29,8 +29,8 @@ public class TestSuite {
 
     }
 
-    @Test
-    public void TestProfile(){
+    @Test(priority = 1)
+    public void GetCurrentPath(){
         System.out.println("Test 002");
         Path currentPath = Paths.get("");
         String s = currentPath.toAbsolutePath().toString();
