@@ -93,7 +93,7 @@ public class AddAndDeletePage {
         btnAdd.click();
 
         //Input user details
-        String username = "taytay020";
+        String username = "taytay022";
         String password = "admin123";
 
         Global.waitForElementClickable(Global.driver,"id", returnBtnSave(), 10);
