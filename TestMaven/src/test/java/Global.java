@@ -68,5 +68,8 @@ public class Global {
     }
 
 
+    public static void implicitWait(int secs){
+        Global.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(secs));
+    }
 
 }
